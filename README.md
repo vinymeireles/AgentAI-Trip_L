@@ -91,6 +91,10 @@ O projeto **Agentes de IA para Turismo** demonstra como **sistemas multiagentes*
 
 📍 **Autor:** [Paulo Vinicius Meireles]  
 📫 **Contato:** ✉️ viniciusmeireles@gmail.com
-🧩 **Framework Base:** [CrewAI](https://github.com/vinymeireles/AgentAI-Trip)
-📅 **Versão:** 1.0  - 2025
+🧩 **Framework Base:** [CrewAI](https://github.com/vinymeireles/AgentAI-Trip_L)
+🤖 https://agentai-tripl.streamlit.app/
+Login - AgentAI Trip
+👤 Usuário: teste
+🔒 Senha: teste
+📅 **Versão:** 2.0  - 2025
 
