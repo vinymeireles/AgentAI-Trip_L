@@ -1,0 +1,112 @@
+#MainMenu {visibility:hidden;}
+footer {visibility:hidden;}
+
+section[data-testid='stSidebar'] {
+    background-color: #111;
+    flex-shrink: unset !important;
+}
+
+@media(hover:hover) and (min-width: 600px) and (max-width: 769px){
+
+    header[data-testid="stHeader"] {
+        display:none;
+    }
+
+    section[data-testid='stSidebar'] {
+        height: 100%;
+        min-width:95px !important;
+        width: 95px !important;
+        margin-left: 305px;
+        position: relative;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s ease;
+        padding-top: 60px;
+        white-space: nowrap;
+    }
+
+    section[data-testid='stSidebar']:hover{
+        min-width: 330px !important;
+        }
+
+    button[kind="header"] {
+        display: none;
+    }
+
+    div[data-testid="collapsedControl"]{
+        display: none;
+    }
+
+}
+
+@media(hover: hover) and (min-width: 769px){
+
+    header[data-testid="stHeader"] {
+        display:none;
+    }
+
+    section[data-testid='stSidebar'] {
+        height: 100%;
+        min-width:95px !important;
+        width: 95px !important;
+        transform:translateX(0px);
+        position: relative;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s ease;
+        padding-top: 60px;
+        white-space: nowrap;
+    }
+
+    section[data-testid='stSidebar']:hover{
+        min-width: 330px !important;
+        }
+
+    button[kind="header"] {
+        display: none;
+    }
+
+    div[data-testid="collapsedControl"]{
+        display: none;
+    }
+}
+
+/* Seleciona a imagem dentro da sidebar */
+section[data-testid='stSidebar'] img {
+    transition: all 0.3s ease-in-out;
+    width: 180px;            /* largura padrão (expandida) */
+    margin: 0 auto;
+    display: block;
+}
+
+/* Quando a sidebar está retraída (hover off), reduz a imagem */
+section[data-testid='stSidebar']:not(:hover) img {
+    width: 60px !important;  /* imagem menor na versão retraída */
+    opacity: 0.8;
+}
+
+
+/* Ocultar botão "Deploy" do Streamlit Cloud (desktop e mobile) */
+header[data-testid="stHeader"] button[kind="header"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Ocultar ícone ou botão flutuante de menu mobile */
+div[data-testid="stActionButtonIcon"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Garante que o cabeçalho inteiro não apareça em nenhuma resolução */
+header[data-testid="stHeader"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+

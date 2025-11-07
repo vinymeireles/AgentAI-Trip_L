@@ -1,0 +1,7 @@
+# Ignorar ambiente virtual
+venv/
+__pycache__
+.env
+outros/
+add_user.py
+install.txt
